@@ -16,30 +16,24 @@ using System.Windows.Shapes;
 namespace Library
 {
     /// <summary>
-    /// Logika interakcji dla klasy HomePage.xaml
+    /// Logika interakcji dla klasy AddBook.xaml
     /// </summary>
-    public partial class HomePage : Page
+    public partial class AddBook : Page
     {
-        private Frame Frame;
-        public HomePage()
+        Frame Frame;
+        public AddBook()
         {
             InitializeComponent();
         }
-
-        public HomePage(Frame frame1)
+        public AddBook(Frame frame1)
         {
             InitializeComponent();
             this.Frame = frame1;
         }
 
-        private void ShowBooks_Click(object sender, RoutedEventArgs e)
+        private void Return_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(new ShowBooks(this.Frame));
-        }
-
-        private void AddBook_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(new AddBook(this.Frame));
+            Frame.Navigate(new HomePage(Frame));
         }
     }
 }

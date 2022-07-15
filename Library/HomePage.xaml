@@ -19,7 +19,7 @@
             Height="30"
             Foreground="WhiteSmoke"
             Background="#13242C"
-            Click="SearchBtn_Click"/>
+            Click="ShowBooks_Click"/>
         <Button
             x:Name="addBtn"
             Content="Dodaj książke"
@@ -30,6 +30,6 @@
             Height="30"
             Foreground="WhiteSmoke"
             Background="#13242C"
-            Click="addBtn_Click"/>
+            Click="AddBook_Click"/>
     </Grid>
 </Page>
