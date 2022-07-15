@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace Library
 {
@@ -39,5 +40,15 @@ namespace Library
             Frame.Navigate(new HomePage(Frame));
         }
 
+    private void BookAdd_Click(object sender, RoutedEventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-1D164CU\SQLCOURSE2019;Initial Catalog=Library;Integrated Security=True";
+
+            using (LibraryContext db = new LibraryContext(connectionString))
+            {
+                db.Add(new Author { Name = BookTitle.Text, Surname=BookYear.Text });
+                db.SaveChanges();
+            }
+        }
     }
 }

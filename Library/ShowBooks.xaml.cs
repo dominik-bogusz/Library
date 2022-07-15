@@ -30,6 +30,8 @@ namespace Library
         public ShowBooks(Frame frame1)
         {
             InitializeComponent();
+            this.Frame = frame1;
+
             string connectionString = @"Data Source=DESKTOP-1D164CU\SQLCOURSE2019;Initial Catalog=Library;Integrated Security=True";
 
             using (LibraryContext db = new LibraryContext(connectionString))
@@ -38,7 +40,6 @@ namespace Library
                 Books = db.Book.ToList();
             }
             BooksList.ItemsSource = Books;
-            this.Frame = frame1;
         }
 
         private void Return_Click(object sender, RoutedEventArgs e)

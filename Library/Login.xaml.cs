@@ -65,38 +65,5 @@ namespace Library
 
             }
         }
-
-        private void Password_DragEnter(object sender, DragEventArgs e)
-        {
-            if (Username.Text.Length == 0)
-            {
-                errormessage.Text = "Wprowadź nazwę użytkownika";
-                Username.Focus();
-            }
-            else if (!Regex.IsMatch(Username.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
-            {
-                errormessage.Text = "Wprowadź poprawną nazwę użytkownika";
-                Username.Select(0, Username.Text.Length);
-                Username.Focus();
-            }
-            else
-            {
-                string username = Username.Text;
-                string password = Password.Password;
-
-
-                if (username != "admin@admin.pl" || password != "admin")
-                {
-                    errormessage.Text = "Złe hasło lub nazwa użytkownika";
-
-                }
-
-                else if (username == "admin@admin.pl" && password == "admin")
-                {
-                    this.Frame.Navigate(new HomePage(this.Frame));
-                }
-
-            }
-        }
     }
 }

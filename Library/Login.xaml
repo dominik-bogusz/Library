@@ -15,6 +15,6 @@
         <TextBlock HorizontalAlignment="Center" Height="50" Margin="0,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" TextAlignment="Center" FontSize="24" FontWeight="Bold"><Run Language="pl-pl" Text="Biblioteka"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="16" Margin="240,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"><Run Text="Login"/><Run Language="pl-pl" Text=":"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="16" Margin="240,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"><Run Language="pl-pl" Text="Hasło"/><Run Text=":"/></TextBlock>
-        <TextBlock Height="23" HorizontalAlignment="Center" x:Name ="errormessage" VerticalAlignment="Top" Width="168" Margin="0,292,0,0"  OpacityMask="Crimson" Foreground="#FFE5572C" TextAlignment="Center"  Text=""  />
+        <TextBlock Height="23" HorizontalAlignment="Center" x:Name ="errormessage" VerticalAlignment="Top" Width="195" Margin="0,292,0,0"  OpacityMask="Crimson" Foreground="#FFE5572C" TextAlignment="Center"  Text=""  />
     </Grid>
 </Page>

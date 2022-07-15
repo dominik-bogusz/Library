@@ -9,8 +9,8 @@
       Title="ShowBooks">
 
     <Grid>
-        <DataGrid Name="BooksList" HorizontalAlignment="Left" Height="217" Margin="123,0,0,0" VerticalAlignment="Center" Width="550"/>
-        <Label Content="Książki w bibliotece" HorizontalAlignment="Center" Height="44" VerticalAlignment="Top" Width="399" Background="#FFF7F3F3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,48,0,0" FontSize="24"/>
+        <DataGrid Name="BooksList" HorizontalAlignment="Left" Height="217" Margin="123,0,0,0" VerticalAlignment="Center" Width="550" Background="White" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Center" Height="50" Margin="0,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" TextAlignment="Center" FontSize="24" FontWeight="Bold"><Run Language="pl-pl" Text="Książki"/></TextBlock>
         <Button x:Name="Return" Content="Powrót" HorizontalAlignment="Center" Margin="0,377,0,0" VerticalAlignment="Top" Click="Return_Click" Height="34" Width="66" Background="White" FontWeight="Bold" />
 
 

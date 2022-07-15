@@ -9,9 +9,12 @@
       Title="AddBook">
 
     <Grid>
-        <Label Content="Dodaj książke" HorizontalAlignment="Center" Height="44" VerticalAlignment="Top" Width="399" Background="#FFF7F3F3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,48,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Center" Height="50" Margin="0,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" TextAlignment="Center" FontSize="24" FontWeight="Bold"><Run Language="pl-pl" Text="Dodaj książkę"/></TextBlock>
         <Button x:Name="Return" Content="Powrót" HorizontalAlignment="Center" Margin="0,378,0,0" VerticalAlignment="Top" Click="Return_Click" Height="34" Width="66" Background="White" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="241,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="143" Height="27"/>
-
+        <TextBox Name="BookTitle" HorizontalAlignment="Center" Height="39" Margin="0,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" TextAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="10,10,10,10"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="240,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"><Run Language="pl-pl" Text="Tytuł:"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="240,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"><Run Language="pl-pl" Text="Rok wydania"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="BookYear" HorizontalAlignment="Center" Height="39" Margin="0,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" TextAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="10,10,10,10"/>
+        <Button Click="BookAdd_Click" Content="Dodaj" HorizontalAlignment="Center" Height="39" Margin="0,309,0,0" VerticalAlignment="Top" Width="224" Background="#FFFFA624" FontSize="16" FontWeight="Bold" Cursor="Hand"/>
     </Grid>
 </Page>
