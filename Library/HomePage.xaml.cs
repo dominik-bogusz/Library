@@ -39,7 +39,7 @@ namespace Library
 
         private void AddBook_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(new AddBook(this.Frame));
+            this.Frame.Navigate(new AddAuthor(this.Frame));
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)

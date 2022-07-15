@@ -19,20 +19,17 @@ namespace Library
     /// <summary>
     /// Logika interakcji dla klasy AddBook.xaml
     /// </summary>
-    public partial class AddBook : Page
+    public partial class AddAuthor : Page
     {
         Frame Frame;
-        public AddBook()
+        public AddAuthor()
         {
             InitializeComponent();
         }
-        public AddBook(Frame frame1)
+        public AddAuthor(Frame frame1)
         {
             InitializeComponent();
             this.Frame = frame1;
-
-            //db.Add(new Blog { Url = "http://blogs.msdn.com/adonet" });
-            //db.SaveChanges();
         }
 
         private void Return_Click(object sender, RoutedEventArgs e)
@@ -46,7 +43,7 @@ namespace Library
 
             using (LibraryContext db = new LibraryContext(connectionString))
             {
-                db.Add(new Author { Name = BookTitle.Text, Surname=BookYear.Text });
+                db.Add(new Author { Name = AuthorName.Text, Surname=AuthorSurname.Text });
                 db.SaveChanges();
             }
         }
