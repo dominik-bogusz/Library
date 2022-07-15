@@ -21,6 +21,7 @@ namespace Library
     public partial class ShowBooks : Page
     {
         Frame Frame;
+        public List<Book> Books { get; set; }
         public ShowBooks()
         {
             InitializeComponent();
@@ -35,6 +36,18 @@ namespace Library
         private void Return_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(new HomePage(Frame));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-1D164CU\SQLCOURSE2019;Initial Catalog=Library;Integrated Security=True";
+
+            using (LibraryContext db = new LibraryContext(connectionString))
+            {
+
+                Books = db.Book.ToList();
+            }
+            BooksList.ItemsSource = Books;
         }
     }
 }
