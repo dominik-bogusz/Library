@@ -41,5 +41,10 @@ namespace Library
         {
             this.Frame.Navigate(new AddBook(this.Frame));
         }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(new Login(this.Frame));
+        }
     }
 }

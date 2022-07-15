@@ -29,11 +29,15 @@ namespace Library
         {
             InitializeComponent();
             this.Frame = frame1;
+
+            //db.Add(new Blog { Url = "http://blogs.msdn.com/adonet" });
+            //db.SaveChanges();
         }
 
         private void Return_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(new HomePage(Frame));
         }
+
     }
 }

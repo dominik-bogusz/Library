@@ -10,7 +10,8 @@
 
     <Grid>
         <Label Content="Dodaj książke" HorizontalAlignment="Center" Height="44" VerticalAlignment="Top" Width="399" Background="#FFF7F3F3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,48,0,0" FontSize="24"/>
-        <Button x:Name="Return" Content="Powrót" HorizontalAlignment="Left" Margin="33,384,0,0" VerticalAlignment="Top" Click="Return_Click" Height="34" Width="66" Background="White" FontWeight="Bold"/>
+        <Button x:Name="Return" Content="Powrót" HorizontalAlignment="Center" Margin="0,378,0,0" VerticalAlignment="Top" Click="Return_Click" Height="34" Width="66" Background="White" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Margin="241,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="143" Height="27"/>
 
     </Grid>
 </Page>

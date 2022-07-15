@@ -23,7 +23,7 @@ namespace Library
         public MainWindow()
         {
             InitializeComponent();
-            Frame.Navigate(new HomePage(Frame));
+            Frame.Navigate(new Login(Frame));
         }
 
         private void Frame_Navigated(object sender, NavigationEventArgs e)
